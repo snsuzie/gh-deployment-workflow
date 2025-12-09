@@ -18,15 +18,15 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout
+        uses: actions/checkout@v4
 
       - name: Setup Pages
-        uses: actions/configure-pages
+        uses: actions/configure-pages@v4
 
       - name: Upload artifact
-        uses: actions/upload-pages-artifact
+        uses: actions/upload-pages-artifact@v3
         with:
-          path: ../..   # Dossier à déployer (racine du site)
+          path: .   # Dossier à déployer (racine du site)
 
       - name: Deploy to GitHub Pages
-        uses: actions/deploy-pages
+        uses: actions/deploy-pages@v4
